@@ -331,6 +331,15 @@ An automatic configuration program for vim
 <img src="https://github.com/Ro0tk1t.png?size=64" width="64" height="64" alt="Ro0tk1t">
 </a>
 
+针对在MacOS上一键安装失败YCM的修复方法，来自原仓库的大佬提供
+```
+cd ~/.vim/plugged
+mv YouCompleteMe YouCompleteMe_OLD
+git clone https://github.com/ycm-core/YouCompleteMe.git
+cd YouCompleteMe
+git submodule update --init --recursive（这步比较慢，要等待一段时间）
+python3 ./install.py
+```
 
 ## 支持开源:heart:
 
